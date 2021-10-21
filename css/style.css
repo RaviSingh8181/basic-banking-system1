@@ -1,0 +1,137 @@
+/* CSS Reset */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* CSS Variables */
+:root{
+    --navbar-height: 55px;
+}
+
+/* Navigation Bar */
+#navbar{
+    display: flex;
+    align-items: center;
+}
+
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+}
+
+/* Navigation Bar: Logo and Image */
+#logo{
+    margin: 20px 25px;
+}
+#logo img{
+    height: 70px;
+    margin: 3px 6px;
+}
+
+/* Navigation Bar: List Styling */
+#navbar{
+    position: relative;
+}
+
+#navbar ul{
+    display: flex;
+    font-family: 'Baloo Bhai';  
+}
+
+#navbar ul li{
+    list-style: none;
+    font-size: 1.5rem;
+}
+
+#navbar ul li a{
+   color: white;
+   display: block;
+   font-family: 'STIX Two Text', serif;
+   padding: 3px 22px;
+   border-radius: 20px;
+   text-decoration: none;
+}
+
+#navbar ul li a:hover{
+    color: black;
+    background-color: white;
+}
+
+/* Home Section */
+#home{
+    display: flex;
+    flex-direction: column;
+    height: 130%;
+    padding: 6px 50px;
+    justify-content: center;
+    align-items: center;
+}
+
+#home::before{
+    content: "";
+    position: fixed;
+    background: linear-gradient(rgba(0, 0, 0, 0.452), rgba(0, 0, 0, 0.5)), url('../background.jpg');
+    height: 140%;
+    width: 120%;
+    z-index: -1;
+    opacity: 0.88;
+}
+
+#home h1{
+    color:darkturquoise;
+    text-align: center;
+    font-family: 'Bree Serif', serif;
+    margin-top: 2px;
+}
+
+#home p{
+    color:rgb(248, 248, 255);
+    text-align: center;
+    font-size: 1.3rem;
+    font-family:Arial, Helvetica, sans-serif;
+}
+/* Utility Classes */
+.h-primary{
+    font-size: 3.9rem;
+    padding: -7px;
+}
+.btn{
+    position: relative;
+    text-align: center;
+    width: 262px;
+    margin-top: -5px;
+    padding: 6px;
+    font-size: 22px;
+    color: blue;
+    font-family:'Roboto Slab', serif;
+    font-weight: 359;
+    border: 4px solid #15f4ee;
+    text-transform: 15px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    border-radius: 100px;
+    opacity: 0.84;
+}
+.btn:hover
+{
+    box-shadow: 0 4px 10px 0 #15f4ee inset, 0 4px 10px 0 #15f4ee,
+                0 4px 10px 0 #15f4ee inset, 0 4px 10px 0 #15f4ee;
+}
+   
+#container{
+    position: sticky;
+    color: white;
+    text-align: center;
+    font-size: 0.90rem;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 40px;
+    background: black;
+    padding-bottom: 14px;
+}
+
